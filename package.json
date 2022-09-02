@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^13.0.1",
+    "markdown-to-html": "^0.0.13",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.3",
+    "remark": "^14.0.2"
   },
   "devDependencies": {
     "@types/node": "18.7.14",

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import ActiveLink from './activeLink'
 
 const linkClass = "pt-2 w-full text-center border-t-2 border-orange-500 hover:border-t-4 hover:text-orange-500 hover:pt-1.5"
-const activeClassName = 'border-t-4 border-black hover:text-black hover:pt-1.5'
+const activeClassName = 'border-t-4 border-black hover:text-black hover:pt-2'
 
 export const Navbar = () => {
     return (
