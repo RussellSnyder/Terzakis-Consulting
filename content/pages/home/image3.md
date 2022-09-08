@@ -1,8 +1,9 @@
 ---
-image: bridgeImage
-bgColor: '#FFBD73'
+image: waterImage
+bgColor: '#4EC1A1'
 ---
-# 'Health Communication',
-Evidence-based health psychology paired with effective communication techniques to make sure your healthcare campaign works - by getting the right message across the right way.
+# Psychological Research
 
-The key: expert knowledge of human health behavior and plenty of real-life experience.
+Effective health campaigns are based on profound insights into the root causes of patient and client behavior.
+
+The key is to go beyond pigeon-holing people into personas and market segments. Psychological research digs deeper and find the spots you need to hit to really make a difference

@@ -1,8 +1,9 @@
 ---
-image: bridgeImage,
-bgColor: '#FFBD73'
+image: compassImage
+bgColor: '#FFE873'
 ---
-# 'Health Communication',
-Evidence-based health psychology paired with effective communication techniques to make sure your healthcare campaign works - by getting the right message across the right way.
+# Strategic Consulting
 
-The key: expert knowledge of human health behavior and plenty of real-life experience.
+Launching a healthcare campaign in Germany? Local knowledge and hands-on experience are key.
+
+Let me help you navigate the German healthcare system and mentality to make your project a success.
