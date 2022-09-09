@@ -1,5 +1,4 @@
 ---
-image: bridgeImage
 bgColor: '#FFBD73'
 ---
 # Health Communication

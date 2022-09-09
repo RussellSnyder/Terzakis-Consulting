@@ -1,5 +1,4 @@
 ---
-image: compassImage
 bgColor: '#FFE873'
 ---
 # Strategic Consulting

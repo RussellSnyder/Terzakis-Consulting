@@ -1,5 +1,4 @@
 ---
-image: waterImage
 bgColor: '#4EC1A1'
 ---
 # Psychological Research

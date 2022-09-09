@@ -4,17 +4,21 @@ import ReactMarkdown from 'react-markdown'
 import { Layout } from '../../components/layout'
 import { parseMarkdownFile } from '../../utils/mardkownHelper'
 
+import imprintImage from '../../public/imprint/imprint.png'
+import Image from 'next/image'
+
 interface Props {
   imprint: string
 }
 
-const Imprint = ({imprint}: Props) => {
+const Imprint = () => {
   return (
     <Layout>
       <div className="p-6 text-xl">
-        <ReactMarkdown>
+        <Image src={imprintImage} layout="responsive" />
+        {/* <ReactMarkdown>
           {imprint}
-        </ReactMarkdown>
+        </ReactMarkdown> */}
       </div>
     </Layout>
   )
@@ -22,14 +26,14 @@ const Imprint = ({imprint}: Props) => {
 
 export default Imprint
 
-export async function getStaticProps() {
-  const folder = 'content/pages/imprint/'
+// export async function getStaticProps() {
+//   const folder = 'content/pages/imprint/'
 
-  const imprint = parseMarkdownFile(`${folder}/imprint.md`)
+//   const imprint = parseMarkdownFile(`${folder}/imprint.md`)
 
-  return {
-    props: {
-      imprint: imprint.content
-    }
-  }
-}
+//   return {
+//     props: {
+//       imprint: imprint.content
+//     }
+//   }
+// }

@@ -21,12 +21,13 @@ const Home = ({featureImageProps}: Props) => {
 
 export default Home
 
-export async function getStaticProps() {
+export function getStaticProps() {
 
-  const featureImageFiles = fs.readdirSync('content/pages/home/')
+  const folder = 'content/pages/home/images/'
+  const featureImageFiles = fs.readdirSync(folder)
 
   const featureImageProps: MarkdownContent<FeatureImageProps>[] = featureImageFiles.map((fileName) => {
-    return parseMarkdownFile<FeatureImageProps>(`content/pages/home/${fileName}`)
+    return parseMarkdownFile<FeatureImageProps>(`${folder}${fileName}`)
   })
 
   return {
