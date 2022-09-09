@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../public/logo.jpg'
 
-export const PageHeader = () => {
+export const PageBanner = () => {
     return (
         <header className="text-center mb-8">
             <Link href="/" title="Return to Home Page" >

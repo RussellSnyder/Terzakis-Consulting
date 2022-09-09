@@ -8,6 +8,9 @@ module.exports = {
     fontFamily: {
       sans: ['Titillium Web', 'sans-serif']
     },
+    lineHeight: {
+      default: '2.7em'
+    }
   },
   plugins: [],
 }

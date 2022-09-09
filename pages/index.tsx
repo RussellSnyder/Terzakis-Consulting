@@ -1,10 +1,8 @@
 import fs from 'fs';
-import matter from 'gray-matter';
 import { FeatureImageProps, HomeFeaturedImages } from '../components/homeFeaturedImages';
 import { NavBottomLayout } from '../components/navBottomLayout';
-import ReactMarkdown from 'react-markdown'
-import { parseMarkdownFile } from '../utils/mardkownHelper';
 import { MarkdownContent } from '../types';
+import { parseMarkdownFile } from '../utils/mardkownHelper';
 
 interface Props {
   featureImageProps: MarkdownContent<FeatureImageProps>[]
