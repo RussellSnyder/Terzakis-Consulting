@@ -10,7 +10,7 @@ interface Props {
 
 const Home = ({featureImageProps}: Props) => {
 
-  const structured = featureImageProps.map(({content, data}) => ({content, ...data}))
+  const structured = featureImageProps.map(({content, data}) => ({...data, content}))
 
   return (
     <NavBottomLayout>

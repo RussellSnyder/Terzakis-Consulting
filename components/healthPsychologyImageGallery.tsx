@@ -1,9 +1,5 @@
 import Image from 'next/image'
 
-import bridgeImage from '../public/home/bridge.png'
-import compassImage from '../public/home/compass.png'
-import waterImage from '../public/home/water.png'
-
 import ReactMarkdown from 'react-markdown'
 
 import image1 from '../public/healthPsychology/benefit_gallery_1.png'
@@ -28,8 +24,8 @@ export interface GalleryImageProps {
 }
 
 const reactMarkdownComponents = {
-    h1: ({node, ...props}) => <h3 className='lg:text-2xl' {...props} />,
-    p: ({node, ...props}) => <p className='text-slate-50 text-sm leading-loose md:text-base mt-2' {...props} />
+    h1: ({...props}) => <h3 className='lg:text-2xl' {...props} />,
+    p: ({...props}) => <p className='text-slate-50 text-sm leading-loose md:text-base mt-2' {...props} />
 }
 
 const GalleryImage = ({markdown, index}: GalleryImageProps) => {
@@ -45,7 +41,7 @@ const GalleryImage = ({markdown, index}: GalleryImageProps) => {
                 absolute top-0 left-0 right-0 h-40
                 `}
             >
-                <Image layout='fill' src={imageMap[index as keyof typeof imageMap]} className='transition hover:opacity-0 duration-500' />
+                <Image alt="Stock image for image gallery" layout='fill' src={imageMap[index as keyof typeof imageMap]} className='transition hover:opacity-0 duration-500' />
             </div>
             <div className='p-6'>
                 <ReactMarkdown
@@ -66,7 +62,7 @@ interface Props {
 export const HealthPsychologyImageGallery = ({imageGalleryData}: Props) => {
   return (
       <div className='pt-5 pb-4 grid grid-cols-1 w-80 mx-auto sm:w-auto sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center'>
-        {imageGalleryData.map((markdown, i) => <GalleryImage markdown={markdown} index={i}/>)}
+        {imageGalleryData.map((markdown, i) => <GalleryImage key={i} markdown={markdown} index={i}/>)}
       </div>
   )
 }

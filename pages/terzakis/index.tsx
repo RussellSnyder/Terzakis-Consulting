@@ -10,8 +10,8 @@ import { parseMarkdownFile } from '../../utils/mardkownHelper'
 
 const reactMarkdownComponents = {
   ...sharedMarkdownComponents,
-  h2: ({node, ...props}) => <h4 className='text-2xl mt-8 mb-4' {...props} />,
-  ul: ({node, ...props}) => <ul className='columns-2 mx-10 list-disc bg-orange-300 p-4 pl-10 text-lg mb-12' {...props} />,
+  h2: ({...props}) => <h4 className='text-2xl mt-8 mb-4' {...props} />,
+  ul: ({...props}) => <ul className='columns-2 mx-10 list-disc bg-orange-300 p-4 pl-10 text-lg mb-12' {...props} />,
 }
 
 interface Props {
@@ -25,7 +25,7 @@ const Terzakis = ({bio}: Props) => {
     <Layout>
       <div className="lg:flex">
         <div className='mx-auto w-64 flex-none lg:mr-8'>
-          <Image layout='responsive' src={iriniFace}/>
+          <Image alt="Irini Terzakis headshot" layout='responsive' src={iriniFace}/>
           <ul className='mb-10 lg:mb-0 text-center lg:text-left'>
             <li className='mt-8 text-orange-400 text-xl'>{data.name}</li>
             <li>{data.degree1}</li>

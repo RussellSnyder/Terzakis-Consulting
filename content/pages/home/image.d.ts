@@ -1,3 +1,3 @@
-export type ImageData = {
+export type HomeImageData = {
     bgColor: string
 }

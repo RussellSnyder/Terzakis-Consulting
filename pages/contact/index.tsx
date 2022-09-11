@@ -12,7 +12,7 @@ const Contact = ({pageHeader}: Props) => {
     <Layout>
       <PageHeader text={pageHeader} />
       <div className='text-lg md:text-2xl p-6'>
-        <Image layout={'responsive'} src={contactImage} />
+        <Image alt="contact information for Terzakis Consulting" layout={'responsive'} src={contactImage} />
         {/* <div className='mb-6'>
           <a href={`tel:${phone}`} className="hover:text-orange-500">
             <PhoneIcon width={24} className="mr-4 inline" />

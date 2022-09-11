@@ -14,21 +14,21 @@ interface Props {
 }
 
 const sharedComponents = {
-  p: ({node, ...props}) => <p className='text' {...props} />,
+  p: ({...props}) => <p className='text' {...props} />,
 }
 
 const topReactMarkdownComponents = {
-  p: ({node, ...props}) => <p className='col-span-2 md:col-span-1' {...props} />,
-  h1: ({node, ...props}) => <h1 className='col-span-2 text-4xl mb-6' {...props} />,
-  h2: ({node, ...props}) => <h2 className='col-span-2 mt-8 text-2xl mb-6 text-left' {...props} />,
-  blockquote: ({node, ...props}) => <blockquote className='mt-4 md:mt-0 text-emerald-500 md:ml-20' {...props} />,
+  p: ({...props}) => <p className='col-span-2 md:col-span-1' {...props} />,
+  h1: ({...props}) => <h1 className='col-span-2 text-4xl mb-6' {...props} />,
+  h2: ({...props}) => <h2 className='col-span-2 mt-8 text-2xl mb-6 text-left' {...props} />,
+  blockquote: ({...props}) => <blockquote className='mt-4 md:mt-0 text-emerald-500 md:ml-20' {...props} />,
 }
 
 const bottomReactMarkdownComponents = {
-  p: ({node, ...props}) => <p className='' {...props} />,
-  a: ({node, ...props}) => <a className='text-orange-500' {...props} />,
-  h2: ({node, ...props}) => <h2 className='mt-8 text-2xl mb-6 text-left' {...props} />,
-  blockquote: ({node, ...props}) => <blockquote className='py-6 w-80 md:w-400 mx-auto sm:mx-0 md:ml-auto text-xl text-center md:text-left text-emerald-500' {...props} />,
+  p: ({...props}) => <p className='' {...props} />,
+  a: ({...props}) => <a className='text-orange-500' {...props} />,
+  h2: ({...props}) => <h2 className='mt-8 text-2xl mb-6 text-left' {...props} />,
+  blockquote: ({...props}) => <blockquote className='py-6 w-80 md:w-400 mx-auto sm:mx-0 md:ml-auto text-xl text-center md:text-left text-emerald-500' {...props} />,
 }
 
 const HealthPsychology = ({top, bottom, imageGallery}: Props) => {

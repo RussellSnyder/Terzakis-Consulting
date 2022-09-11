@@ -6,6 +6,6 @@ export const PageHeader = ({text}: {text:string}) => (
 )
 
 export const sharedMarkdownComponents = {
-    h1: ({node, ...props}) => <h1 className={pageHeaderClass} {...props} />,
-    p: ({node, ...props}) => <p className={bodyClass} {...props} />,
+    h1: ({...props}) => <h1 className={pageHeaderClass} {...props} />,
+    p: ({...props}) => <p className={bodyClass} {...props} />,
 }

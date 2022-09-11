@@ -19,8 +19,8 @@ export interface FeatureImageProps extends HomeImageData {
 }
 
 const reactMarkdownComponents = {
-    h1: ({node, ...props}) => <h3 className='md:font-bold lg:font-normal lg:text-2xl' {...props} />,
-    p: ({node, ...props}) => <p className='text-xs sm:text-sm md:text-base mt-4' {...props} />
+    h1: ({...props}) => <h3 className='md:font-bold lg:font-normal lg:text-2xl' {...props} />,
+    p: ({...props}) => <p className='text-xs sm:text-sm md:text-base mt-4' {...props} />
 }
 
 const responsiveClassSizes = 'h-56 w-56 sm:h-72 sm:w-72 lg:h-30 lg:w-auto'

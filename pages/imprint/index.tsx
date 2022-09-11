@@ -15,7 +15,7 @@ const Imprint = () => {
   return (
     <Layout>
       <div className="p-6 text-xl">
-        <Image src={imprintImage} layout="responsive" />
+        <Image alt="contact information for Terzakis Consulting" src={imprintImage} layout="responsive" />
         {/* <ReactMarkdown>
           {imprint}
         </ReactMarkdown> */}
